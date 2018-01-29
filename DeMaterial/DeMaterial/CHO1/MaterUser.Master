@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MaterUser.master.cs" Inherits="DeMaterial.CHO1.MaterUser" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>材料信息网</title>
+    <link href="../CSS/Material.less" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 250px;
+            border: solid 1px #00ffff;
+            text-align: left;
+            vertical-align: top;
+            height: 303px;
+        }
+        .auto-style2 {
+            width: 229px;
+            border: solid 1px #00ffff;
+            text-align: left;
+            vertical-align: top;
+        }
+        .auto-style3 {
+            width: 229px;
+            border: solid 1px #00ffff;
+            text-align: left;
+            vertical-align: top;
+            height: 303px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" style="text-align:center;">
+        <table class="table">
+            <tr>
+                <td colspan="2" class="king">
+                    <strong style="font-family:汉仪新蒂雪山体; font-size:60px;color:#00ffff;">材料信息网</strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                     <asp:HyperLink ID="hyShopp" runat="server">  购物车[0]  </asp:HyperLink>
+                    <asp:LinkButton ID="LinExit" runat="server">  安全退出   </asp:LinkButton>
+                </td>
+                <td class="rtd">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <asp:TreeView ID="treMaterial" runat="server"></asp:TreeView>
+                </td>
+                <td class="auto-style1">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="border:solid 1px #00ffff;">
+                    <p>
+                    <a href="http://www.gd-nf.com.cn/" target="_blank">南方IT学院</a>版权所有</p>
+                <p>
+                    服务热线：0756-6811222 0756-6813333</p>
+                <p>
+                    CopyRight &copy; 1996-2018 South Vocational College. All Rights Reserved.
+                </p>
+            
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

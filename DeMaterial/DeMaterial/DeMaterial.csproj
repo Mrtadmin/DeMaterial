@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE75B68C-695E-40EA-B5B9-ACFCE452A8B1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeMaterial</RootNamespace>
+    <AssemblyName>DeMaterial</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Customer\Material.Master" />
+    <Content Include="CHO1\MaterUser.Master" />
+    <Content Include="CSS\Material.less" />
+    <Content Include="Image\1.jpg" />
+    <Content Include="Image\123.jpg" />
+    <Content Include="Image\12313.jpg" />
+    <Content Include="Image\123456.jpg" />
+    <Content Include="Image\2.5国标4平方铜芯电线.jpg" />
+    <Content Include="Image\2门衣柜推拉门.jpg" />
+    <Content Include="Image\300600客厅厨房釉面内墙砖.jpg" />
+    <Content Include="Image\304不锈钢冷热面盆水龙头.jpg" />
+    <Content Include="Image\304不锈钢波纹管软管防爆金属软管.jpg" />
+    <Content Include="Image\304不锈钢淋浴屏恒温花洒.jpg" />
+    <Content Include="Image\3D复古砖墙大型壁画.jpg" />
+    <Content Include="Image\3D立体墙纸.jpg" />
+    <Content Include="Image\3d立体墙纸卧室客厅.jpg" />
+    <Content Include="Image\3D立体墙纸蒲公英无缝墙布.jpg" />
+    <Content Include="Image\86型开关插座.jpg" />
+    <Content Include="Image\86型暗装墙壁开关.jpg" />
+    <Content Include="Image\arrow箭牌卫浴马桶.jpg" />
+    <Content Include="Image\babysafe窗户.jpg" />
+    <Content Include="Image\D牌chdele 家用86型墙壁开关.jpg" />
+    <Content Include="Image\JOMOO九牧不锈钢软管.jpg" />
+    <Content Include="Image\led吸顶灯创意温馨卧室.jpg" />
+    <Content Include="Image\led吸顶灯圆形卧室灯.jpg" />
+    <Content Include="Image\LED吸顶灯圆形走廊灯卧室灯.jpg" />
+    <Content Include="Image\LED吸顶灯长方形客厅灯.jpg" />
+    <Content Include="Image\LED吸顶灯长方形遥控大气客厅灯具.jpg" />
+    <Content Include="Image\loft工业风门酒吧门.jpg" />
+    <Content Include="Image\PVC地板贴免胶仿木地板.jpg" />
+    <Content Include="Image\pvc客厅背景墙壁纸.jpg" />
+    <Content Include="Image\PVC室内推拉移门.jpg" />
+    <Content Include="Image\PVC折叠门.jpg" />
+    <Content Include="Image\PVC推拉门.jpg" />
+    <Content Include="Image\PVC自粘免胶石塑地板.jpg" />
+    <Content Include="Image\Tona北欧式组合浴室柜.jpg" />
+    <Content Include="Image\一开单控带LED灯电源小开关.jpg" />
+    <Content Include="Image\七色云彩碳化半亚光实竹地板.jpg" />
+    <Content Include="Image\三号佳居 厨房釉面砖.jpg" />
+    <Content Include="Image\三号佳居 客厅地砖.jpg" />
+    <Content Include="Image\三合板百强板材实木.jpg" />
+    <Content Include="Image\三头创意餐桌灯时尚个性大气饭厅LED客厅灯.jpg" />
+    <Content Include="Image\三层防静电抗疲劳地垫.jpg" />
+    <Content Include="Image\三联环保水性漆金属防锈漆.jpg" />
+    <Content Include="Image\三聚氰胺板刨花密度板.jpg" />
+    <Content Include="Image\上海断桥铝合金门窗.jpg" />
+    <Content Include="Image\下水管道不锈钢全铜.jpg" />
+    <Content Include="Image\不锈钢丝编织进水软管.jpg" />
+    <Content Include="Image\不锈钢波纹管软管.jpg" />
+    <Content Include="Image\不锈钢浴室柜吊柜.jpg" />
+    <Content Include="Image\不锈钢浴室柜组合.jpg" />
+    <Content Include="Image\不锈钢滤网全铜.jpg" />
+    <Content Include="Image\不锈钢玻璃楼梯扶手.jpg" />
+    <Content Include="Image\个性创意落地灯立式LED客厅.jpg" />
+    <Content Include="Image\个性创意餐厅吧台吊灯.jpg" />
+    <Content Include="Image\个性茶室影视墙经典壁纸.jpg" />
+    <Content Include="Image\久量led充电式折叠台灯.jpg" />
+    <Content Include="Image\九牧不锈钢304地漏.jpg" />
+    <Content Include="Image\九牧王全铜面盆水龙头  .jpg" />
+    <Content Include="Image\九牧王新款全铜单龙头.jpg" />
+    <Content Include="Image\书房服装店铺装修壁纸.jpg" />
+    <Content Include="Image\五彩精灵角花.jpg" />
+    <Content Include="Image\代清漆透明色油漆桐油木器漆.jpg" />
+    <Content Include="Image\仿古全瓷青花瓷.jpg" />
+    <Content Include="Image\仿古地漏欧式全铜地漏  .jpg" />
+    <Content Include="Image\仿古陶瓷马赛克.jpg" />
+    <Content Include="Image\优狐86型墙壁开关.jpg" />
+    <Content Include="Image\低盆长方形整体淋浴房.jpg" />
+    <Content Include="Image\佛山抛光玻化砖.jpg" />
+    <Content Include="Image\佳迪开关插座二开单双控电灯开关.jpg" />
+    <Content Include="Image\俄罗斯白橡木实木地板.jpg" />
+    <Content Include="Image\光沐长海碳化重竹地板.jpg" />
+    <Content Include="Image\兔宝宝板材 杉木芯E0级.jpg" />
+    <Content Include="Image\全自动洗衣机进水软管.jpg" />
+    <Content Include="Image\全钢化玻璃移门隔断浴.jpg" />
+    <Content Include="Image\全铜双孔面盆龙头.jpg" />
+    <Content Include="Image\全铜地漏卫生间.jpg" />
+    <Content Include="Image\公牛插座插排插板.jpg" />
+    <Content Include="Image\公牛插座插排插板线.jpg" />
+    <Content Include="Image\公牛插座转换器.jpg" />
+    <Content Include="Image\内墙乳胶漆白色彩色.jpg" />
+    <Content Include="Image\凤铝789窗户.jpg" />
+    <Content Include="Image\分子吊灯后现代创意魔豆灯.jpg" />
+    <Content Include="Image\创意时尚简约客厅立式落地灯.jpg" />
+    <Content Include="Image\刨抛光松杉木条木方.jpg" />
+    <Content Include="Image\北欧创意艺术酒店书房装饰三角台灯.jpg" />
+    <Content Include="Image\北欧宜家遥控卧室立式台灯.jpg" />
+    <Content Include="Image\北欧衣柜推拉门.jpg" />
+    <Content Include="Image\北欧黑白白花砖.jpg" />
+    <Content Include="Image\华帝卫浴全铜面盆龙头.jpg" />
+    <Content Include="Image\华润漆 净味惠涂易.jpg" />
+    <Content Include="Image\单头餐桌灯时尚卧室灯过道.jpg" />
+    <Content Include="Image\单开电源开关电灯开关.jpg" />
+    <Content Include="Image\单控无线射频遥控开关.jpg" />
+    <Content Include="Image\博典番龙眼纯实木地板.jpg" />
+    <Content Include="Image\卡贝卫生间防臭地漏.jpg" />
+    <Content Include="Image\卡通长颈鹿LED落地灯.jpg" />
+    <Content Include="Image\卧室地胶地板  .jpg" />
+    <Content Include="Image\卧室宿舍寝室墙壁纸.jpg" />
+    <Content Include="Image\卧室平拉门五门衣柜.jpg" />
+    <Content Include="Image\卧室成人柜子.jpg" />
+    <Content Include="Image\卧室电视背景墙沙粒壁纸.jpg" />
+    <Content Include="Image\卫浴PVC浴室柜.jpg" />
+    <Content Include="Image\卫浴PVC浴室柜组合落地式.jpg" />
+    <Content Include="Image\卫浴欧式PVC浴室柜组合 .jpg" />
+    <Content Include="Image\卫生间瓷砖花片.jpg" />
+    <Content Include="Image\印象公馆儿童衣柜衣橱.jpg" />
+    <Content Include="Image\厨卫面包砖釉面砖.jpg" />
+    <Content Include="Image\可莱尔北欧原木橱柜.jpg" />
+    <Content Include="Image\可调色耐擦洗防潮内墙乳胶漆.jpg" />
+    <Content Include="Image\台上盆水龙头冷热 .jpg" />
+    <Content Include="Image\台下盆冷热水龙头.jpg" />
+    <Content Include="Image\台灯LED卧室宿舍小书桌插电护眼.jpg" />
+    <Content Include="Image\四季风 集成吊顶.jpg" />
+    <Content Include="Image\国标阻燃硬铜芯家装电线.jpg" />
+    <Content Include="Image\地中海儿童衣柜实木.jpg" />
+    <Content Include="Image\地中海拱形窗户.jpg" />
+    <Content Include="Image\地毯机房防静电.jpg" />
+    <Content Include="Image\地毯花瓷砖地砖.jpg" />
+    <Content Include="Image\地漏防臭不锈钢.jpg" />
+    <Content Include="Image\地砖手绘砖.jpg" />
+    <Content Include="Image\埃美柯全铜拉丝地漏.jpg" />
+    <Content Include="Image\埃美柯水龙头.jpg" />
+    <Content Include="Image\墙壁式无线路由器家用86型智能家居.jpg" />
+    <Content Include="Image\增压不锈钢手持大顶喷双用淋浴.jpg" />
+    <Content Include="Image\壁画电视3d无缝墙布.jpg" />
+    <Content Include="Image\壁纸3d立体影视墙.jpg" />
+    <Content Include="Image\声旺板材免漆板实木生态板.jpg" />
+    <Content Include="Image\复古工业风浅灰色素色纯色墙纸.jpg" />
+    <Content Include="Image\复古金属台灯护眼.jpg" />
+    <Content Include="Image\复古铁艺台地灯.jpg" />
+    <Content Include="Image\多乐士乳胶漆墙面漆家丽安净味.jpg" />
+    <Content Include="Image\多乐士乳胶漆家丽安净味竹炭.jpg" />
+    <Content Include="Image\多乐士乳胶漆白色彩色小包装.jpg" />
+    <Content Include="Image\多保断桥铝门窗.jpg" />
+    <Content Include="Image\多功能成人柜子.jpg" />
+    <Content Include="Image\大学士瓷砖 厚微晶石.jpg" />
+    <Content Include="Image\大理石地砖玻化砖.jpg" />
+    <Content Include="Image\大理石瓷砖.jpg" />
+    <Content Include="Image\天利学生护眼学习书桌台灯.jpg" />
+    <Content Include="Image\天利照明小台灯书桌.jpg" />
+    <Content Include="Image\太佳户外防腐木围栏碳化木葡萄架地板.jpg" />
+    <Content Include="Image\太阳能led户外防水草坪庭院灯.jpg" />
+    <Content Include="Image\太阳能光伏线缆双层绝缘直流电线.jpg" />
+    <Content Include="Image\太阳能围墙灯LED户外柱头柱上灯.jpg" />
+    <Content Include="Image\太阳能灯户外路灯家用.jpg" />
+    <Content Include="Image\太阳能草坪灯LED.jpg" />
+    <Content Include="Image\奢华美式水晶吊灯.jpg" />
+    <Content Include="Image\奥普 集成吊顶铝扣板.jpg" />
+    <Content Include="Image\女皇世家 全铜仿古花洒.jpg" />
+    <Content Include="Image\孔雀鱼TC002马赛克.jpg" />
+    <Content Include="Image\孔雀鱼TC005卫生间.jpg" />
+    <Content Include="Image\宜家led护眼立式钓鱼落地灯.jpg" />
+    <Content Include="Image\宜家黑白花砖.jpg" />
+    <Content Include="Image\宜朴森橱柜 欧式白色整体橱柜定做.jpg" />
+    <Content Include="Image\宝润瓷砖地砖.jpg" />
+    <Content Include="Image\实木e0级双面生态板免漆板.jpg" />
+    <Content Include="Image\实木书柜简易自由组合.jpg" />
+    <Content Include="Image\实木地热地板.jpg" />
+    <Content Include="Image\实木大芯板免漆板生态板.jpg" />
+    <Content Include="Image\实木定制加工木线条木方.jpg" />
+    <Content Include="Image\实木旋转楼梯 .jpg" />
+    <Content Include="Image\实木楼梯.jpg" />
+    <Content Include="Image\客厅卧室瓷砖.jpg" />
+    <Content Include="Image\客厅墙纸处理无纺布壁纸.jpg" />
+    <Content Include="Image\客厅影视墙装饰3d壁画.jpg" />
+    <Content Include="Image\客厅灯长方形卧室灯创意大气.jpg" />
+    <Content Include="Image\室外防水花园别墅灯.jpg" />
+    <Content Include="Image\家和富贵3d立体墙纸.jpg" />
+    <Content Include="Image\家用86型墙壁欧式单开双联开关.jpg" />
+    <Content Include="Image\家用塑胶地板.jpg" />
+    <Content Include="Image\家用简易新款淋浴淋浴房 .jpg" />
+    <Content Include="Image\家装1.5平方电线.jpg" />
+    <Content Include="Image\家韵明装淋浴花洒套装.jpg" />
+    <Content Include="Image\家韵淋浴花洒套装全铜龙头.jpg" />
+    <Content Include="Image\宿舍led夜灯夹子小台灯.jpg" />
+    <Content Include="Image\密拼贝壳马赛克.jpg" />
+    <Content Include="Image\寝室儿童阅读充电夹子usb台灯.jpg" />
+    <Content Include="Image\尊貌纯实木二翅豆地板 .jpg" />
+    <Content Include="Image\小为R30一开单控触摸开关.jpg" />
+    <Content Include="Image\小花无缝卧室墙布.jpg" />
+    <Content Include="Image\尚品宅配整体橱柜定做.jpg" />
+    <Content Include="Image\尚诺户外高耐竹地板.jpg" />
+    <Content Include="Image\工业风创意个性现代工矿灯罩.jpg" />
+    <Content Include="Image\帕力美刺绣墙布.jpg" />
+    <Content Include="Image\帕力美无缝墙布电视背景.jpg" />
+    <Content Include="Image\帛爵亚麻墙布卧室客厅.jpg" />
+    <Content Include="Image\帝致内墙乳胶漆.jpg" />
+    <Content Include="Image\幼儿园釉面彩色砖.jpg" />
+    <Content Include="Image\床头灯创意插电LED灯泡台灯E27.jpg" />
+    <Content Include="Image\床铺地板衣柜隔板.jpg" />
+    <Content Include="Image\庭院灯具走廊过道阳台灯.jpg" />
+    <Content Include="Image\彩色彩金马桶.jpg" />
+    <Content Include="Image\微晶石客厅地板砖.jpg" />
+    <Content Include="Image\微晶石背景墙电视瓷砖.jpg" />
+    <Content Include="Image\德丽斯1mm防火板.jpg" />
+    <Content Include="Image\德力西电线 国标纯铜多色BV.jpg" />
+    <Content Include="Image\德国Wetzlar浴室.jpg" />
+    <Content Include="Image\成人卧室组装衣柜.jpg" />
+    <Content Include="Image\成人组合简易衣柜.jpg" />
+    <Content Include="Image\户外塑木木塑地板阳台.jpg" />
+    <Content Include="Image\户外壁灯景观庭院灯.jpg" />
+    <Content Include="Image\户外木地板碳化防腐.jpg" />
+    <Content Include="Image\户外花园阳台防腐木质地板.jpg" />
+    <Content Include="Image\户外防腐木板材美国红松木.jpg" />
+    <Content Include="Image\手工DIY材料原木木方.jpg" />
+    <Content Include="Image\手机控制无线触摸免布线开关.jpg" />
+    <Content Include="Image\手机红外智能家电万能遥控器.jpg" />
+    <Content Include="Image\手机远程遥控开关智能插座.jpg" />
+    <Content Include="Image\扶手立柱等整体楼梯.jpg" />
+    <Content Include="Image\抗甲醛防霉净味环保内墙乳胶漆.jpg" />
+    <Content Include="Image\抛金砖拼花地毯.jpg" />
+    <Content Include="Image\拼图瓷砖抛晶砖.jpg" />
+    <Content Include="Image\拼花地砖客厅地板.jpg" />
+    <Content Include="Image\拼花手工复古花砖.jpg" />
+    <Content Include="Image\捷盛美3d立体无缝电视背景墙.jpg" />
+    <Content Include="Image\推拉门卧室衣柜2门衣橱衣帽间收纳大衣柜.jpg" />
+    <Content Include="Image\推拉门衣柜卧室家具板式衣柜 .jpg" />
+    <Content Include="Image\提花无缝壁布温馨婚房.jpg" />
+    <Content Include="Image\插线板带线插.jpg" />
+    <Content Include="Image\整体旋转梯楼梯.jpg" />
+    <Content Include="Image\整体橱柜四季阳光2之蓝白小镇厨房橱柜子门定做.jpg" />
+    <Content Include="Image\整体淋浴房.jpg" />
+    <Content Include="Image\整体简易淋浴房.jpg" />
+    <Content Include="Image\整体酒店宾馆浴室.jpg" />
+    <Content Include="Image\断桥铝门窗.jpg" />
+    <Content Include="Image\新中式创意吊灯餐厅吧台.jpg" />
+    <Content Include="Image\新标断桥铝门窗.jpg" />
+    <Content Include="Image\新款科勒抽水马桶.jpg" />
+    <Content Include="Image\新款科勒挂墙式马桶.jpg" />
+    <Content Include="Image\旋转楼梯.jpg" />
+    <Content Include="Image\无纺布墙纸3D立体.jpg" />
+    <Content Include="Image\无纺布壁纸3d立体浮雕.jpg" />
+    <Content Include="Image\无线扩展插座.jpg" />
+    <Content Include="Image\无线智能家居遥控开关.jpg" />
+    <Content Include="Image\无线触摸遥控手机.jpg" />
+    <Content Include="Image\无缝墙布客厅电视背景.jpg" />
+    <Content Include="Image\无缝壁布墙布现代卧室.jpg" />
+    <Content Include="Image\时尚像素艺术花片.jpg" />
+    <Content Include="Image\时尚温馨卧室玻璃吸顶灯.jpg" />
+    <Content Include="Image\普拉提防滑地板砖.jpg" />
+    <Content Include="Image\智能家居主机Allone Pro.jpg" />
+    <Content Include="Image\智能开关系统控制网关手机遥控.jpg" />
+    <Content Include="Image\智能开关钢化玻璃面板触摸.jpg" />
+    <Content Include="Image\朗吉蒂柱头灯太阳能灯.jpg" />
+    <Content Include="Image\木纹厨房釉面墙砖.jpg" />
+    <Content Include="Image\木门窗翻新漆水漆防水面漆.jpg" />
+    <Content Include="Image\机房地毯防静.jpg" />
+    <Content Include="Image\杰科竹木纤维集成墙板.jpg" />
+    <Content Include="Image\林氏木业衣柜组合小户型移门.jpg" />
+    <Content Include="Image\柏优 整体橱柜定做 .jpg" />
+    <Content Include="Image\柏居PVC推拉门.jpg" />
+    <Content Include="Image\楚王实木书柜.jpg" />
+    <Content Include="Image\楼梯地毯.jpg" />
+    <Content Include="Image\樟子松水性漆防腐木碳化.jpg" />
+    <Content Include="Image\橡木浴室柜组合.jpg" />
+    <Content Include="Image\橡木落地式实木卫浴柜.jpg" />
+    <Content Include="Image\欧式复古铁艺灯简约乡村卧室餐厅.jpg" />
+    <Content Include="Image\欧式金色增压喷头卫生间太阳能淋浴.jpg" />
+    <Content Include="Image\欧派整体橱柜定做.jpg" />
+    <Content Include="Image\歌诗雅纯色墙纸.jpg" />
+    <Content Include="Image\正品简约沙粒沙石墙纸.jpg" />
+    <Content Include="Image\正泰明装开关插座.jpg" />
+    <Content Include="Image\步步金抛晶砖.jpg" />
+    <Content Include="Image\水晶灯客厅灯长方形吸顶灯.jpg" />
+    <Content Include="Image\水晶玻璃优质马赛克.jpg" />
+    <Content Include="Image\水晶羽毛白色立式落地灯.jpg" />
+    <Content Include="Image\沈阳条纹办公方块地毯.jpg" />
+    <Content Include="Image\沙粒无纺布壁纸.jpg" />
+    <Content Include="Image\沙粒无纺纯墙纸.jpg" />
+    <Content Include="Image\沙粒灰色麻布纹无纺布墙纸.jpg" />
+    <Content Include="Image\油漆水性木器漆涂料清漆白漆.jpg" />
+    <Content Include="Image\法丽莎家具欧式衣柜卧.jpg" />
+    <Content Include="Image\法恩莎卫浴连体座便器.jpg" />
+    <Content Include="Image\法恩莎墙排坐便器马桶.jpg" />
+    <Content Include="Image\法恩莎马桶.jpg" />
+    <Content Include="Image\波浪黄菱形镀金抛.jpg" />
+    <Content Include="Image\洁优全铜面盆单冷龙头.jpg" />
+    <Content Include="Image\浇花灌溉海蓝水管花园防爆软管.jpg" />
+    <Content Include="Image\浴室防滑地砖.jpg" />
+    <Content Include="Image\海创集成吊顶.jpg" />
+    <Content Include="Image\淋浴房整体浴室.jpg" />
+    <Content Include="Image\淋浴房蒸汽沐浴房.jpg" />
+    <Content Include="Image\淋浴花洒全铜套装.jpg" />
+    <Content Include="Image\淋雨淋浴花洒喷头软管.jpg" />
+    <Content Include="Image\温馨卧室灯书房简约大气客厅灯.jpg" />
+    <Content Include="Image\灰米黄色服装饭店墙纸.jpg" />
+    <Content Include="Image\烤漆实木复合门.jpg" />
+    <Content Include="Image\热压咖啡色重竹地板  .jpg" />
+    <Content Include="Image\热水器进水管马桶软管.jpg" />
+    <Content Include="Image\熊猫电线电缆国标BV.jpg" />
+    <Content Include="Image\熊猫电线电缆线国标BV.jpg" />
+    <Content Include="Image\爆米花金刚微晶石.jpg" />
+    <Content Include="Image\爱惟欧式柱头灯防水别墅围墙灯.jpg" />
+    <Content Include="Image\牛筋水管加厚塑料透明软管.jpg" />
+    <Content Include="Image\牛筋水管加厚塑料透明软管防晒.jpg" />
+    <Content Include="Image\特洛帝斯集成吊顶.jpg" />
+    <Content Include="Image\玄关镀金抛晶砖.jpg" />
+    <Content Include="Image\玉石天成铝扣板集成吊顶.jpg" />
+    <Content Include="Image\环保油漆涂料.jpg" />
+    <Content Include="Image\环宇防水盒罩保护盖壳墙壁开关.jpg" />
+    <Content Include="Image\现代简约厨房 橱柜定制装修那拉提.jpg" />
+    <Content Include="Image\瓷砖拼花地砖.jpg" />
+    <Content Include="Image\瓷砖拼花地砖微晶石.jpg" />
+    <Content Include="Image\生态木阳台吊顶.jpg" />
+    <Content Include="Image\田园两门小衣柜实木移门木质.jpg" />
+    <Content Include="Image\电动自动遥控窗帘.jpg" />
+    <Content Include="Image\电动遥控复式伸缩楼梯.jpg" />
+    <Content Include="Image\电视背景墙砖.jpg" />
+    <Content Include="Image\电镀铝合金折叠门.jpg" />
+    <Content Include="Image\百汉抑菌全铜花洒套装淋浴.jpg" />
+    <Content Include="Image\百福美集成吊顶.jpg" />
+    <Content Include="Image\皇派梦幻迪拜铝合金门窗.jpg" />
+    <Content Include="Image\真亚麻素色无缝墙布.jpg" />
+    <Content Include="Image\石英石台面整体厨房订做.jpg" />
+    <Content Include="Image\硅藻泥沙粒墙纸.jpg" />
+    <Content Include="Image\碳化全实竹地板E0级竹地板.jpg" />
+    <Content Include="Image\碳化竹木地板柚木色地板.jpg" />
+    <Content Include="Image\碳化防腐木贴式户外木地板.jpg" />
+    <Content Include="Image\磁性防蚊纱窗.jpg" />
+    <Content Include="Image\磨楼梯踏步板台阶砖.jpg" />
+    <Content Include="Image\福瑞特阁楼伸缩楼梯阁楼.jpg" />
+    <Content Include="Image\禧赢门实木折叠门.jpg" />
+    <Content Include="Image\科曼达卫浴原木浴室柜.jpg" />
+    <Content Include="Image\移门衣柜木质.jpg" />
+    <Content Include="Image\竹地板竹子木地板.jpg" />
+    <Content Include="Image\竹涛竹地板.jpg" />
+    <Content Include="Image\简意 LED夹子台灯.jpg" />
+    <Content Include="Image\简易加宽床头柜.jpg" />
+    <Content Include="Image\简易淋浴房隔断移门.jpg" />
+    <Content Include="Image\简易移门浴室淋浴房.jpg" />
+    <Content Include="Image\简欧鼎圣德釉面定制烤漆门.jpg" />
+    <Content Include="Image\简约创意美式遥控落地灯.jpg" />
+    <Content Include="Image\简约粗水泥纹 沙粒纹.jpg" />
+    <Content Include="Image\简约餐厅灯阳台灯玄关灯具.jpg" />
+    <Content Include="Image\箭牌卫浴虹吸式抽水马桶.jpg" />
+    <Content Include="Image\箭牌直冲式马桶.jpg" />
+    <Content Include="Image\粉色陶瓷马赛克.jpg" />
+    <Content Include="Image\素色卧室客厅墙布非墙纸.jpg" />
+    <Content Include="Image\素色无纺布壁纸.jpg" />
+    <Content Include="Image\素色条纹无缝墙布.jpg" />
+    <Content Include="Image\红橡木实木板材.jpg" />
+    <Content Include="Image\红橡木实木桌面板材.jpg" />
+    <Content Include="Image\纯实木地板特价仿古番龙眼.jpg" />
+    <Content Include="Image\纯灰色瓷砖地砖.jpg" />
+    <Content Include="Image\纯白色釉面砖.jpg" />
+    <Content Include="Image\经济型实木组装板式4门.jpg" />
+    <Content Include="Image\绿色厨房墙砖浴室.jpg" />
+    <Content Include="Image\罗贝开关插座.jpg" />
+    <Content Include="Image\美国进口红橡木方.jpg" />
+    <Content Include="Image\美式复古木板装修.jpg" />
+    <Content Include="Image\美饰王闪光黄金漆.jpg" />
+    <Content Include="Image\翡翠玉瓷砖地砖.jpg" />
+    <Content Include="Image\耐普大气家用鸟巢吸顶灯.jpg" />
+    <Content Include="Image\耐用型防静电抗疲劳地垫.jpg" />
+    <Content Include="Image\自粘免胶地板.jpg" />
+    <Content Include="Image\自粘地板革PVC地板.jpg" />
+    <Content Include="Image\自粘环保地板.jpg" />
+    <Content Include="Image\自粘石塑PVC地板.jpg" />
+    <Content Include="Image\臻蒂牌水性金箔漆黄金漆.jpg" />
+    <Content Include="Image\艺莎304不锈钢长条形地漏.jpg" />
+    <Content Include="Image\花园露台阳光房实木地板.jpg" />
+    <Content Include="Image\英达罗车间地垫.jpg" />
+    <Content Include="Image\茶几地毯砖.jpg" />
+    <Content Include="Image\莨苕叶美式复古墙纸.jpg" />
+    <Content Include="Image\菠萝格防腐木地板.jpg" />
+    <Content Include="Image\菠萝格防腐木户外地板  .jpg" />
+    <Content Include="Image\葡萄架简易庭院阳台防腐木板.jpg" />
+    <Content Include="Image\蓝色地中海釉面砖.jpg" />
+    <Content Include="Image\蓝色客厅灯具卧室灯.jpg" />
+    <Content Include="Image\蓝色混拼玻璃马赛克.jpg" />
+    <Content Include="Image\蓝藤卫浴 花洒套装淋浴器.jpg" />
+    <Content Include="Image\调光调色LED护眼落地灯.jpg" />
+    <Content Include="Image\转角衣柜实木收纳柜子 .jpg" />
+    <Content Include="Image\进口纯实木地板圆盘豆.jpg" />
+    <Content Include="Image\迷宫花片.jpg" />
+    <Content Include="Image\透明清漆家具翻新漆茶盘.jpg" />
+    <Content Include="Image\逢春楠竹地板.jpg" />
+    <Content Include="Image\酒吧会所服装店3D立体墙纸.jpg" />
+    <Content Include="Image\重庆博屹门窗 .jpg" />
+    <Content Include="Image\金刚石地砖.jpg" />
+    <Content Include="Image\金线玻璃马赛克.jpg" />
+    <Content Include="Image\金霸闪光黄金漆金色油漆.jpg" />
+    <Content Include="Image\金龙羽电线家装家用阻燃BVR.jpg" />
+    <Content Include="Image\金龙羽电线电缆BVR.jpg" />
+    <Content Include="Image\鑫乐天防腐木油户外耐候桐油.jpg" />
+    <Content Include="Image\鑫诺伟天全屋定制现代北欧风橱柜.jpg" />
+    <Content Include="Image\铁门漆栏杆漆金属钢结构防锈漆.jpg" />
+    <Content Include="Image\铜芯国标家装电线.jpg" />
+    <Content Include="Image\铝扣板天花板客厅.jpg" />
+    <Content Include="Image\锁扣平扣重竹地板.jpg" />
+    <Content Include="Image\镀金无限拼抛晶砖.jpg" />
+    <Content Include="Image\门柱灯室外庭院灯柱子灯.jpg" />
+    <Content Include="Image\阁楼楼梯复式伸缩.jpg" />
+    <Content Include="Image\阁楼楼梯室内实木整梯.jpg" />
+    <Content Include="Image\防水PVC小户型浴室柜.jpg" />
+    <Content Include="Image\防水加厚PVC墙纸.jpg" />
+    <Content Include="Image\防水耐磨自粘地板.jpg" />
+    <Content Include="Image\防滑加厚塑胶自粘PVC地板.jpg" />
+    <Content Include="Image\防腐木户外阳台地板.jpg" />
+    <Content Include="Image\防静电地毯客厅.jpg" />
+    <Content Include="Image\防静电地毯客厅办公.jpg" />
+    <Content Include="Image\陶瓷马赛克鹅卵石.jpg" />
+    <Content Include="Image\随身便携移动USB接口电脑灯.jpg" />
+    <Content Include="Image\隔板置物架实木板材.jpg" />
+    <Content Include="Image\雄派 卫生间瓷砖.jpg" />
+    <Content Include="Image\雅典米黄微晶石.jpg" />
+    <Content Include="Image\雅居 高配PVC折叠门.jpg" />
+    <Content Include="Image\集成吊顶木纹铝扣板.jpg" />
+    <Content Include="Image\露天防腐木碳化木地板.jpg" />
+    <Content Include="Image\青朴欧式田园风格整体厨房定做.jpg" />
+    <Content Include="Image\面盆水龙头冷热水.jpg" />
+    <Content Include="Image\飞利浦开关插座.jpg" />
+    <Content Include="Image\香柏木地板  .jpg" />
+    <Content Include="Image\香槟金色86型家用墙壁暗装开关.jpg" />
+    <Content Include="Image\马可波啰彩色马桶.jpg" />
+    <Content Include="Image\驰凤净味内墙油漆涂料.jpg" />
+    <Content Include="Image\高端智能恒温花洒套装淋浴.jpg" />
+    <Content Include="Image\高雅艺术厨房卫生间集成吊顶.jpg" />
+    <Content Include="Image\鲁卡生态木户外木板.jpg" />
+    <Content Include="Image\麦黎逊抗疲劳橡胶按摩.jpg" />
+    <Content Include="Image\黄龙玉微晶石.jpg" />
+    <Content Include="Image\黄龙玉微晶石玉石瓷砖.jpg" />
+    <Content Include="Image\黑白竖条纹电视背景墙纸.jpg" />
+    <Content Include="Image\黑白花砖.jpg" />
+    <Content Include="Image\黑胡桃木料木方实木.jpg" />
+    <Content Include="Image\黑胡桃水曲柳白蜡木实木.jpg" />
+    <Content Include="Image\黑色水晶玻璃马赛克.jpg" />
+    <Content Include="MaterialLink.aspx" />
+    <Content Include="MaterRead.aspx" />
+    <Content Include="CSS\张鹏.rar" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="MaterDefault.aspx" />
+    <Content Include="MaterFinPwd.aspx" />
+    <Content Include="Material.aspx" />
+    <Content Include="MaterLogin.aspx" />
+    <Content Include="MaterPassword.aspx" />
+    <Content Include="MaterShoppCar.aspx" />
+    <Content Include="Script\jquery.min.js" />
+    <Content Include="Script\YuxiSlider.jQuery.min.js" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CHO1\MaterUser.Master.cs">
+      <DependentUpon>MaterUser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CHO1\MaterUser.Master.designer.cs">
+      <DependentUpon>MaterUser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Material.Master.cs">
+      <DependentUpon>Material.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Material.Master.designer.cs">
+      <DependentUpon>Material.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HttpHandler1.cs" />
+    <Compile Include="MaterDefault.aspx.cs">
+      <DependentUpon>MaterDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterDefault.aspx.designer.cs">
+      <DependentUpon>MaterDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterFinPwd.aspx.cs">
+      <DependentUpon>MaterFinPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterFinPwd.aspx.designer.cs">
+      <DependentUpon>MaterFinPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Material.aspx.cs">
+      <DependentUpon>Material.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Material.aspx.designer.cs">
+      <DependentUpon>Material.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialLink.aspx.cs">
+      <DependentUpon>MaterialLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialLink.aspx.designer.cs">
+      <DependentUpon>MaterialLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterLogin.aspx.cs">
+      <DependentUpon>MaterLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterLogin.aspx.designer.cs">
+      <DependentUpon>MaterLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterPassword.aspx.cs">
+      <DependentUpon>MaterPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterPassword.aspx.designer.cs">
+      <DependentUpon>MaterPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterRead.aspx.cs">
+      <DependentUpon>MaterRead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterRead.aspx.designer.cs">
+      <DependentUpon>MaterRead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterShoppCar.aspx.cs">
+      <DependentUpon>MaterShoppCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterShoppCar.aspx.designer.cs">
+      <DependentUpon>MaterShoppCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{66045d03-7b8c-41f3-b365-71750df17262}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{a1b5e7cb-b71a-4cee-86e4-cb109f11ebc5}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{425c3a23-f12c-4d3b-8ce9-0054236e79f6}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rule\Rule.csproj">
+      <Project>{5206aa69-1bb1-4114-8fff-9aa4504e2719}</Project>
+      <Name>Rule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12612</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12612/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
